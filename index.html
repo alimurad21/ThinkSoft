@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="mx-auto relative w-full h-full flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header
+      class="mx-auto h-16 w-full fex items-center justify-center text-white"
+    >
+      <nav class="mx-3 bg-white border-gray-200">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href="https://www.thinksoft.io/"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img src="/logo.png" class="h-8" alt="ThinkSoft Logo" />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main
+      class="mx-auto grow w-full max-w-[1280px] bg-white p-4 sm:p-8 justify-center items-center"
+    >
+      <h1 class="text-3xl sm:text-4xl font-bold text-black-600 my-4">
+        How it Works
+      </h1>
+      <div class="p-4 sm:p-8 border-2 rounded-[10px] bg-gray-50 mt-10">
+        <span
+          class="py-0.5 px-1.5 bg-amber-100 border-2 rounded-[5px] font-bold text-red-800"
+          >Step 1</span
+        >
+        <div
+          class="my-10 gap-12 sm:gap-16 lg:gap-32 flex flex-col lg:flex-row items-center"
+        >
+          <div class="text-center lg:text-left">
+            <h1 class="text-2xl sm:text-3xl font-bold">
+              Bootstrap straight from your Web app
+            </h1>
+            <p class="my-4 sm:my-6 font-semibold">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              quibusdam, repellat iure beatae la
+            </p>
+
+            <ul
+              class="grid grid-cols-1 sm:grid-cols-2 my-4 sm:my-8 md:justify-center sm:items-center font-semibold gap-1"
+            >
+              <span class="flex items-center"
+                >✓
+                <li class="px-2 underline decoration-1 underline-offset-4">
+                  Multiple Windows
+                </li>
+              </span>
+              <span class="flex items-center"
+                >✓
+                <li class="px-2 underline decoration-1 underline-offset-4">
+                  Customizable menus
+                </li>
+              </span>
+              <span class="flex items-center"
+                >✓
+                <li class="px-2 underline decoration-1 underline-offset-4">
+                  Menubar/tray menus
+                </li>
+              </span>
+              <span class="flex items-center"
+                >✓
+                <li class="px-2 underline decoration-1 underline-offset-4">
+                  Launch on startup
+                </li>
+              </span>
+              <span class="flex items-center"
+                >✓
+                <li class="px-2">Offline support</li>
+              </span>
+              <span class="flex items-center"
+                >✓
+                <li class="px-2">Tabs (Mac only)</li>
+              </span>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:justify-end">
+            <img
+              src="/htw.png"
+              alt="How it works"
+              class="max-w-full sm:max-w-[300px] md:max-w-[350px] lg:max-w-[450px]"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer class="bg-white pt-20 pb-5 items-center justify-center text-white mx-auto">
+        <div class="grid grid-cols-12 m-auto mb-30 w-full md:w-3/4">
+          <!-- Left Column -->
+          <div class="col-span-12 md:border-r-2 border-slate-300 md:col-span-6 ml-3 md:ml-0">
+            <p class="font-bold text-[22px] text-[#000248] mb-5">ThinkSoft</p>
+            <p class="text-[#757589] font-normal text-[18px] mb-5">From Idea to Product</p>
+            <p class="text-[#757589] font-normal text-[18px] mb-5">Bringing your dreams to reality</p>
+            <p class="font-bold text-[22px] text-[#000248] mt-20 mb-5">Follow Us On</p>
+            <div class="grid grid-cols-3 w-1/2">
+              <a href="https://www.facebook.com/thinksoft.io" target="_blank">
+                <img src="/facebook.png" class="h-[50px]" alt="Facebook" />
+              </a>
+              <a href="https://www.linkedin.com/company/thinksoftpk?originalSubdomain=pk" target="_blank">
+                <img src="/linkedIn.png" class="h-[50px]" alt="LinkedIn" />
+              </a>
+              <a href="https://www.instagram.com/thinksoft.io/" target="_blank">
+                <img src="/insta.png" class="h-[50px]" alt="Instagram" />
+              </a>
+            </div>
+            <div class="mt-10 mb-5">
+              <a href="mailto:hello@thinksoft.io" class="text-custom-blue hover:underline text-lg">hello@thinksoft.io</a>
+            </div>
+          </div>
+      
+          <!-- Right Column -->
+          <div class="col-span-12 md:col-span-6 ml-3 md:ml-0">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+              <!-- Services -->
+              <div class="md:ml-10">
+                <p class="font-bold text-[22px] text-[#000248] mb-5">Services</p>
+                <div class="mb-4">
+                  <a href="/artificialIntelligence" class="text-[#757589] text-lg hover:text-blue-700">
+                    Artificial Intelligence and Digital Transformation
+                  </a>
+                </div>
+                <div class="mb-4">
+                  <a href="/development" class="text-[#757589] text-lg hover:text-blue-700">Development</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/design" class="text-[#757589] text-lg hover:text-blue-700">Design</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/online-marketing" class="text-[#757589] text-lg hover:text-blue-700">Online Marketing</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/business" class="text-[#757589] text-lg hover:text-blue-700">Business</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/content-strategy" class="text-[#757589] text-lg hover:text-blue-700">Content Strategy</a>
+                </div>
+              </div>
+      
+              <!-- Company -->
+              <div class="md:ml-12">
+                <p class="font-bold text-[22px] text-[#000248] mb-5">Company</p>
+                <div class="mb-4">
+                  <a href="/about-us" class="text-[#757589] text-lg hover:text-blue-700">Services</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/blog" class="text-[#757589] text-lg hover:text-blue-700">Blog</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/career" class="text-[#757589] text-lg hover:text-blue-700">Careers</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/about-us" class="text-[#757589] text-lg hover:text-blue-700">About Us</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/contact" class="text-[#757589] text-lg hover:text-blue-700">Contact</a>
+                </div>
+                <div class="mb-4">
+                  <a href="/consultation" class="text-[#757589] text-lg hover:text-blue-700">Free Consultation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Footer Bottom -->
+        <div class="pt-10 w-full">
+          <div class="grid grid-cols-2 border-t-2 border-slate-300 pt-5 md:w-3/4 mx-auto">
+            <p class="text-[#757589] font-normal text-[15px]">Copyright © 2021 ThinkSoft. All rights reserved</p>
+            <p class="text-[#757589] font-normal text-[15px] text-right">Privacy Policy</p>
+          </div>
+        </div>
+      </footer>
+      
+  </body>
+</html>
